@@ -8,10 +8,8 @@ Create a file in your desired app in your Django Project, let the file name be r
 ### Set the renderer in your settings.py file
 `
 REST_FRAMEWORK = {
-  ...
     'DEFAULT_RENDERER_CLASSES': (
         'yourapp.renderers.APIRenderer',
     ),
-    .....
 }
 `
