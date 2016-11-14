@@ -41,9 +41,6 @@ class APIRenderer(JSONRenderer):
                 cleaned_data["data"] = data
                 cleaned_data["errors"] = None
             else:
-                # arr = [{"%s" % k: "%s" % data[k][0]} if isinstance(
-                # data[k], list) else {"%s" % k: "%s" % data[k]} for k, v in
-                # data.items()]
                 a = defaultdict(dict)
                 for k, v in data.items():
                     if isinstance(v, dict):
